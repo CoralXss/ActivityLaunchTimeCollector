@@ -1,0 +1,14 @@
+[{
+  "project_dir": "your_local_project_dir",
+  "manifest_file": "your_local_project_dir/app/src/main/AndroidManifest.xml",
+  "package_name": "com.coral.aop",
+  "is_release": false,
+  "collect_file": "./file/app.txt",
+  "valid_file": "./file/app_valid.txt",
+  "invalid_file": "./file/app_invalid.txt",
+  "need_build": false,
+  "need_collect": true
+}]
+
+
+
