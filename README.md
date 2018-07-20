@@ -1,5 +1,5 @@
 # ActivityLaunchTimeCollector
-This is a python script for Android Activity launch time statistic . 
+This is a python script for Android Activity launch time . 
 
 一、功能说明（仅适用于本地启动时间统计，如果要收集线上各个用户收集启动时间，可通过 AOP 实现）
 
@@ -8,7 +8,9 @@ This is a python script for Android Activity launch time statistic .
 未完成功能：将文件中收集到的数据以表格形式展示 & 标识每个字段的名称 & 计算每个页面启动时长 & 分析启动时长，得出本地启动页面的简单性能报告。
 具体实现：使用 python 实现 web 服务器 & vue.js 前端展示收集到的数据。
 
-技术要求：1）Python Web服务器搭建； 2）vue.js前端展示。
+使用的第三方python库：lxml（修改xml文件），flask（python后台）
+
+其他技术要求：1）Python Web服务器搭建； 2）vue.js前端展示。
 
 
 二、技术点说明
