@@ -5,7 +5,10 @@
 功能说明：将文件中收集到的数据以表格形式展示 & 标识每个字段的名称 & 计算每个页面启动时长 & 分析启动时长，得出本地启动页面的简单性能报告。
 具体实现：使用 python 实现 web 服务器 & vue.js 前端展示收集到的数据。
 
-技术要求：1）Python Web服务器搭建； 2）vue.js前端展示。
+使用的第三方python库：lxml（修改xml文件），flask（python后台）
+
+其他技术要求：1）Python Web服务器搭建； 2）vue.js前端展示。
+
 
 
 二、技术点说明
@@ -50,14 +53,14 @@ xpath 原理：使用路径表达式选取 XML 文档中的节点或者节点集
    /dateutil.py -- 日期相关
    /fileutil.py -- 文件读写操作
 
-/batch_modify_manifest.py -- 批量修改项目模块 manifest 文件
+/batch_modify_manifest.py -- 批量修改项目模块 manifest 文件（可选，仅用于Android build Task时执行脚本修改）
 /opermanifest.py -- 读取、修改 manifest 工具脚本
 
 /executecmd.py   -- 批量执行 am start -W 工具脚本   
 /findvalidstartpage.py  -- 获取能正常启动的 Activity 脚本（执行一次批量 am start 后才可执行该脚本，主要用于过滤）
 /executeall.py   -- 程序主入口，1）修改manifset文件（若在gradle中实现则此步可省略）；2）批量执行am start命令
 
-2. 后台服务器实现：
+2. 后台服务器实现（可选）：
 /getcollectdata.py  -- flask 实现
 
 

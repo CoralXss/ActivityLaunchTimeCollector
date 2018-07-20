@@ -1,3 +1,9 @@
+# encoding:utf-8
+import os
+import sys
+
+sys.path.append(os.getcwd() + '/util')
+
 from util import fileutil
 from lxml import etree
 

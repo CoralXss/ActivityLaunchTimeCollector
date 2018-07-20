@@ -113,7 +113,7 @@ if __name__ == '__main__':
     app_valid_act_file = root_project['valid_file']
     app_collect_file = root_project['collect_file']
 
-    # todo 如何用全局变量控制？
+    # todo 如何用全局变量控制？(第一次执行改为true，第二次执行改为false进行筛选操作)
     if not NEED_FILTER_INVALID_ACTIVITY:
       first_execute_cmd(**root_project)
     else:  
